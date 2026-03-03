@@ -1,0 +1,20 @@
+## Interface: 120001, 120000, 110207
+## Title: QuickFlip
+## Notes: Commodity deal scanner, one-click buyer, and smart seller for the Auction House
+## Author: LoneEngineer
+## Version: 1.0.0
+## SavedVariables: QuickFlipDB
+
+# Bundled libraries (LibStub + LibAHTab for custom AH tabs)
+Libs/LibStub/LibStub.lua
+Libs/LibAHTab/LibAHTab.lua
+
+# Load order matters — Config and Utils first, then ListManager, then logic, then UI, then Core (orchestrator)
+Config.lua
+Utils.lua
+ListManager.lua
+Scanner.lua
+Buyer.lua
+Seller.lua
+UI.lua
+Core.lua
